@@ -1,0 +1,37 @@
+@use '../../styles/partials/colors' as *;
+@use '../../styles/partials/mixins' as *;
+
+.page-header {
+    padding: 2vh 3vw;
+    background-color: rgba(51, 57, 64, .5);
+    display: flex;
+    justify-content: space-between;
+
+    &__navigation {
+        display: flex;
+        gap: 4vw;
+
+        &-logo {
+            height: 3.8vh;
+        }
+
+        &-links {
+            padding-top: .7vh;
+            width: 30vw;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &-link {
+            font-size: 1.4rem;
+            color: $white;
+            text-decoration: none;
+        }
+    }
+
+    &__login {
+        &-icon {
+            height: 3.8vh;
+        }
+    }
+}
