@@ -1,3 +1,5 @@
+@use './colors' as *;
+
 @mixin mobile {
     @media (min-width: 320px) {
         @content;
@@ -14,4 +16,19 @@
     @media (min-width: 1280px)  {
         @content;
     }
+}
+
+h1 {
+    color: $white;
+    border-bottom: 2px solid $white;
+    width: 90vw;
+}
+
+p {
+    color: $white;
+}
+
+@mixin centered {
+    margin-left: auto;
+    margin-right: auto;
 }
