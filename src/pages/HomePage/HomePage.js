@@ -4,7 +4,7 @@ import { Component } from "react";
 class HomePage extends Component {
     render() {
         return (
-            <div className='HomePage'>
+            <div className='home-page'>
 
             </div>
         )
