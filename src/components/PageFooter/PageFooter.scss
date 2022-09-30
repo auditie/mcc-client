@@ -1,3 +1,22 @@
 @use '../../styles/partials/colors' as *;
 @use '../../styles/partials/global' as *;
 @use '../../styles/partials/mixins' as *;
+
+.footer {
+    background-color: $blue-green;
+    height: 3vh;
+    padding: 2vh 5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__text-copyright {
+        margin: 0;
+        margin-top: .6vh;
+        font-size: 1em;
+    }
+
+    &__socials-insta{
+        height: 3.5vh;
+    }
+}
