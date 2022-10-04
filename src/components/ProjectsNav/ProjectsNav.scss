@@ -1,0 +1,24 @@
+@use '../../styles/partials/colors' as *;
+@use '../../styles/partials/global' as *;
+@use '../../styles/partials/mixins' as *;
+
+.projects-nav {
+    border-bottom: 2px solid $dark-grey;
+
+    &__list {
+        width: 70%;
+        @include centered;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        &-link {
+            list-style-type: none;
+            color: $dark-grey;
+
+            &--active {
+                color: $blue-green;
+            }
+        }
+    }
+}
