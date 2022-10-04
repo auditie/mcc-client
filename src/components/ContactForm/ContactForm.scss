@@ -1,0 +1,44 @@
+@use '../../styles/partials/colors' as *;
+@use '../../styles/partials/global' as *;
+@use '../../styles/partials/mixins' as *;
+
+.contact {
+    padding: 0;
+    color: $white;
+    width: auto;
+
+    &__form {
+        width: 40vw;
+
+        &-label {
+            font-size: 2em;
+        }
+
+        &-split {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 3vh;
+        }
+
+        &-input {
+            font-size: 1em;
+            @include form-input;
+
+            &-mess {
+                @include form-input;
+                width: 40vw;
+                margin-bottom: 2vh;
+            }
+
+            &-button {
+                font-size: 1.2em;
+                border: none;
+                padding: .7vh 2vw;
+                background: $white;
+                color: $dark-grey;
+            }
+        }
+    }
+
+}

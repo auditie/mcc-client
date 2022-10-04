@@ -1,3 +1,20 @@
 @use '../../styles/partials/colors' as *;
 @use '../../styles/partials/global' as *;
 @use '../../styles/partials/mixins' as *;
+
+.contact-page {
+    color: $white;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: $dark-grey;
+    padding-top: 5vh;
+    padding-right: 3vw;
+    padding-left: 3vw;
+
+    &__split {
+        display: flex;
+        flex-direction: row;
+        gap: 10vw;
+    }
+}
