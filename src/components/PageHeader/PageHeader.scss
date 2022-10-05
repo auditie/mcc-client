@@ -2,6 +2,9 @@
 @use '../../styles/partials/mixins' as *;
 
 .page-header {
+    position: absolute;
+    width: 94vw;
+    z-index: 1;
     padding: 2vh 3vw;
     background-color: rgba(51, 57, 64, .5);
     display: flex;
@@ -12,18 +15,18 @@
         gap: 4vw;
 
         &-logo {
-            height: 3.8vh;
+            height: 3vh;
         }
 
         &-links {
             padding-top: .7vh;
-            width: 30vw;
+            width: 25vw;
             display: flex;
             justify-content: space-between;
         }
 
         &-link {
-            font-size: 1.4rem;
+            font-size: 1.1rem;
             color: $white;
             text-decoration: none;
         }
@@ -31,7 +34,7 @@
 
     &__login {
         &-icon {
-            height: 3.8vh;
+            height: 3vh;
         }
     }
 }
