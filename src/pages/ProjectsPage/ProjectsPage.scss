@@ -4,8 +4,28 @@
 
 .projects-page {
     background-color: $light-grey;
-    height: 100vh;
-    padding-top: 5vh;
-    padding-right: 3vw;
-    padding-left: 3vw;
+
+    &__hero {
+
+        &-img {
+            width: 100vw;
+        }
+    }
+
+    &__guide {
+        width: 90vw;
+        @include centered;
+    }
+
+    &__links {
+        margin-top: 5vh;
+        width: 80vw;
+        @include centered;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 2vh;
+        padding-bottom: 5vh;
+    }
 }
