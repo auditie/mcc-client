@@ -1,3 +1,35 @@
 @use '../../styles/partials/colors' as *;
 @use '../../styles/partials/global' as *;
 @use '../../styles/partials/mixins' as *;
+
+.project-page {
+    height: 100vh;
+    background-color: $light-grey;
+
+    &__hero {
+        position: relative;
+
+        &-img {
+            width: 100vw;
+        }
+
+        &-text {
+            width: 90vw;
+            position: absolute;
+            top: 50vh;
+            left: 5vw;
+        }
+        
+        &-title {
+            @include h1-dark;
+        }
+
+        &-about {
+            @include p-dark;
+        }
+
+        &-credit {
+            @include p-dark;
+        }
+    }
+}

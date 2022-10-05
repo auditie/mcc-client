@@ -40,3 +40,12 @@ p {
     padding-top: 2vh;
     padding-bottom: 1vh;
 }
+
+@mixin h1-dark {
+    color: $dark-grey;
+    border-bottom: 2px solid $dark-grey;
+}
+
+@mixin p-dark {
+    color: $dark-grey;
+}

@@ -18,7 +18,8 @@ function App() {
           <Route path='/about' component={AboutPage} />
           <Route path='/contact' component={ContactPage} />
           <Route path='/projects' component={ProjectsPage} />
-          <Route path='/projects/:projectId' component={ProjectPage} />
+          {/* <Route path='/projects/:projectId' component={ProjectPage} /> */}
+          <Route path='/project' component={ProjectPage} />
         </Switch>
         <PageFooter />
       </div>
