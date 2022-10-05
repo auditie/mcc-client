@@ -1,3 +1,9 @@
 @use '../../styles/partials/colors' as *;
 @use '../../styles/partials/global' as *;
 @use '../../styles/partials/mixins' as *;
+
+.admin-page {
+    background-color: $dark-grey;
+    padding-top: 13vh;
+    height: 100vh;
+}

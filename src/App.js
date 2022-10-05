@@ -6,7 +6,7 @@ import AboutPage from './pages/AboutPage/AboutPage';
 import ContactPage from './pages/ContactPage/ContactPage';
 import ProjectsPage from './pages/ProjectsPage/ProjectsPage';
 import ProjectPage from './pages/ProjectPage/ProjectPage';
-import AdminPage from './pages/AdminPage/SiteManager';
+import AdminPage from './pages/AdminPage/AdminPage';
 import PageFooter from './components/PageFooter/PageFooter';
 
 function App() {

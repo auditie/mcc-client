@@ -1,0 +1,46 @@
+@use '../../styles/partials/colors' as *;
+@use '../../styles/partials/global' as *;
+@use '../../styles/partials/mixins' as *;
+
+.manage-site {
+    width: 90vw;
+    @include centered;
+
+    &__jobs {
+
+        &-title {
+            @include admin-sub-titles;
+        }
+
+        &__actions {
+            display: flex;
+            flex-direction: row;
+            gap: 4vw;
+            width: 60vw;
+
+            &-link {
+                @include button-send;
+                text-decoration: none;
+            }
+        }
+    }
+
+    &__employees {
+
+        &-title {
+            @include admin-sub-titles;
+        }
+
+        &__actions {
+           display: flex;
+           flex-direction: row;
+           gap: 4vw;
+           width: 60vw;
+           
+           &-link {
+            @include button-send;
+            text-decoration: none;
+           }
+        }
+    }
+}

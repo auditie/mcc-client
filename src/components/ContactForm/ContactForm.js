@@ -16,7 +16,7 @@ const ContactForm = () => {
                 </div>
                 <label for='message' className='contact__form-label'>MESSAGE *</label><br/>
                 <textarea id='message' name='message' className='contact__form-input-mess' /><br/>
-                <input type='submit' value='SEND' className='contact__form-input-button' />
+                <button type='submit' className='contact__form-input-button'>SEND</button>
             </form>
         </div>
     )

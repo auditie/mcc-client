@@ -1,4 +1,4 @@
-import './SiteManager.scss';
+import './AdminPage.scss';
 import { Component } from "react";
 import { Route, Switch } from 'react-router-dom';
 import AdminLogin from '../../components/AdminLogin/AdminLogin';
@@ -9,7 +9,7 @@ class AdminPage extends Component {
         return (
             <div className='admin-page'>
                 <Switch>
-                    <Route path='/admin' component={AdminLogin} />
+                    <Route path='/admin' exact component={AdminLogin} />
                     <Route path='/admin/manage' component={ManageSite} />
                 </Switch>
             </div>

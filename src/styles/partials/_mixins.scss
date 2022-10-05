@@ -22,6 +22,7 @@ h1 {
     color: $white;
     border-bottom: 2px solid $white;
     width: 90vw;
+    padding-bottom: 1vh;
 }
 
 p {
@@ -48,4 +49,19 @@ p {
 
 @mixin p-dark {
     color: $dark-grey;
+}
+
+@mixin button-send {
+    font-size: 1.2em;
+    border: none;
+    padding: .7vh 2vw;
+    background: $white;
+    color: $dark-grey;
+}
+
+@mixin admin-sub-titles {
+    color: $white;
+    border-bottom: 2px solid $white;
+    width: 30vw;
+    padding-bottom: 1vh;
 }
