@@ -6,6 +6,7 @@ import AboutPage from './pages/AboutPage/AboutPage';
 import ContactPage from './pages/ContactPage/ContactPage';
 import ProjectsPage from './pages/ProjectsPage/ProjectsPage';
 import ProjectPage from './pages/ProjectPage/ProjectPage';
+import AdminPage from './pages/AdminPage/SiteManager';
 import PageFooter from './components/PageFooter/PageFooter';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route path='/projects' component={ProjectsPage} />
           {/* <Route path='/projects/:projectId' component={ProjectPage} /> */}
           <Route path='/project' component={ProjectPage} />
+          <Route path='/admin' component={AdminPage} />
         </Switch>
         <PageFooter />
       </div>
