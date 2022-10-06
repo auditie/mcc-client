@@ -12,7 +12,7 @@ class AdminPage extends Component {
                 <Switch>
                     <Route path='/admin' exact component={AdminLogin} />
                     <Route path='/admin/manage' component={ManageSite} />
-                    <Routhe path='/admin/manage/new-job' component={NewJob} />
+                    <Route path='/admin/new-job' component={NewJob} />
                 </Switch>
             </div>
         )

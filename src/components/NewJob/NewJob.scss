@@ -2,3 +2,65 @@
 @use '../../styles/partials/global' as *;
 @use '../../styles/partials/mixins' as *;
 
+.new-job {
+    width: 90vw;
+    @include centered;
+
+    &__sub-title {
+        @include admin-sub-titles;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+
+        &--top {
+            display: flex;
+            flex-direction: row;
+            gap: 10vw;
+        }
+
+        &--left, &--right {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &-label {
+            font-size: 1.3em;
+            color: $white;
+            margin-top: 2vh;
+        }
+
+        &-input {
+            @include form-input;
+
+            &-mess {
+                @include form-input;
+                width: 50vw;
+                color: $white;
+                font-family: 'museo-sans', 'sans-serif';
+            }
+        }
+
+        &-select {
+            position: relative;
+            font-family: 'museo-sans', 'sans-serif';
+            background-color: $white;
+            margin-top: 1vh;
+            margin-bottom: 1.5vh;
+        }
+
+    
+
+        &-entry {
+            margin-top: 2vh;
+            display: flex;
+            flex-direction: row;
+            gap: 3vw;
+
+            &__button {
+                @include button-send;
+            }
+        }
+    }
+}

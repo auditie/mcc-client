@@ -11,7 +11,7 @@ class ManageSite extends Component {
                     <h2 className='manage-site__jobs-title'>Job Sites</h2>
                     <div className='manage-site__jobs__actions'>
                         <Link className='manage-site__jobs__actions-link' to='/admin/manage/jobsites'>MANAGE JOBS</Link>
-                        <Link className='manage-site__jobs__actions-link' to='/admin/manage/new-job'>POST NEW JOB</Link>
+                        <Link className='manage-site__jobs__actions-link' to='/admin/new-job'>POST NEW JOB</Link>
                     </div>
                 </div>
                 <div className='manage-site__employees'>
