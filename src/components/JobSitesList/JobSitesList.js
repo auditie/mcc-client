@@ -1,5 +1,6 @@
 import './JobSitesList.scss';
 import { Component } from "react";
+import JobManager from '../JobManager/JobManager';
 
 class JobSitesList extends Component {
     render() {
