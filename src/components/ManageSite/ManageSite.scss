@@ -5,6 +5,13 @@
 .manage-site {
     width: 90vw;
     @include centered;
+    position: relative;
+
+    &__back {
+        color: $white;
+        position: absolute;
+        right: 0;
+    }
 
     &__jobs {
         margin-top: 4vh;

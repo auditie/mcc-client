@@ -1,11 +1,13 @@
 import './NewJob.scss';
 import { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class NewJob extends Component {
     render() {
         return (
             <div className='new-job'>
                 <h1 className='new-job__title'>MANAGE SITE</h1>
+                <Link to='/admin/manage' className='new-job__back'>GO BACK</Link>
                 <h2 className='new-job__sub-title'>New Job Site</h2>
                 <form className='new-job__form'>
                     <div className='new-job__form--top'>

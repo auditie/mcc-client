@@ -1,3 +1,26 @@
 @use '../../styles/partials/colors' as *;
 @use '../../styles/partials/global' as *;
 @use '../../styles/partials/mixins' as *;
+
+.job-sites {
+    width: 90vw;
+    @include centered;
+    position: relative;
+
+    &__back {
+        color: $white;
+        position: absolute;
+        right: 0;
+    }
+
+    &__sub-title {
+        @include admin-sub-titles;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2vh;
+    }
+}

@@ -1,3 +1,28 @@
 @use '../../styles/partials/colors' as *;
 @use '../../styles/partials/global' as *;
 @use '../../styles/partials/mixins' as *;
+
+.job-manager {
+    background-color: $white;
+    color: $dark-grey;
+    width: 17vw;
+    height: 9vh;
+    padding: 1vh 2vw;
+
+    &__title {
+        font-size: 1em;
+        margin: 0;
+    }
+
+    &__controls {
+        display: flex;
+        flex-direction: row;
+        gap: 4vw;
+
+        &-action {
+            margin: 0;
+            text-decoration: underline;
+        }
+    }
+
+}

@@ -6,8 +6,4 @@
     background-color: $dark-grey;
     padding-top: 13vh;
     height: 100vh;
-
-    &__sub-title {
-        @include admin-sub-titles;
-    }
 }
